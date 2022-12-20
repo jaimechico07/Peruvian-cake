@@ -1,0 +1,77 @@
+.section-contact {
+  @apply grid ;
+
+  &__figure {
+    @apply col-start-1 row-start-1;
+  }
+
+  &__img{
+    @apply w-full
+  }
+
+  &__containt-title {
+    @apply grid col-start-1 row-start-1 place-content-center;
+  }
+
+  &__title {
+    @apply font-arima-madurai font-semibold text-white;
+    font-size: clamp(1.875rem, 2.2vw + 1.4rem, 4.063rem);
+  }
+
+  &__grid-group {
+    @apply container grid my-8 lg:grid-cols-[50%_auto]   2xl:grid-cols-[45%_auto] lg:justify-between xl:justify-center xl:gap-20;
+  }
+
+  &__col-1 {
+    @apply flex flex-col items-center lg:items-start lg:order-1 my-8 lg:my-0;
+  }
+
+  &__title-col-1 {
+    @apply font-arima-madurai text-primary-400 text-left hidden lg:block font-semibold my-4;
+    font-size: clamp(0.938rem, 0.9vw + 0.8rem, 1.875rem);
+  }
+
+  &__icon {
+    @apply px-4 py-2 lg:py-4 my-2 border-2 text-center border-primary-300 text-primary-300 hover:text-primary-400 w-[55%] font-sans-niramit font-semibold lg:w-full  break-all;
+    font-size: clamp(1.25rem, 0.6vw + 1.1rem, 1.875rem);
+    i {
+      @apply mr-4;
+    }
+  }
+  &__col-2 {
+  }
+
+  &__title-col-2 {
+    @apply font-semibold text-center lg:text-left text-primary-400 font-arima-madurai my-4;
+    font-size: clamp(1.375rem, 0.8vw + 1.2rem, 2.188rem);
+  }
+
+  &__form {
+    @apply p-4 border-2 border-primary-400;
+  }
+
+  &__form-group {
+    @apply grid px-4 gap-4 lg:px-12 lg:py-4;
+  }
+
+  &__label {
+    @apply text-primary-400 font-arima-madurai font-semibold;
+    font-size: clamp(1.125rem, 0.6vw + 1rem, 1.75rem);
+  }
+
+  &__input {
+    @apply w-full py-4 my-2 text-base bg-white border-2 px-7 border-primary-400 placeholder:text-primary-300 font-sans-niramit;
+    font-size: clamp(0.938rem, 0.6vw + 0.8rem, 1.563rem);
+    &--mensaje {
+      @apply pb-24 pt-4;
+    }
+  }
+
+  &__buton-content {
+    @apply flex justify-center my-8;
+  }
+
+  &__buton {
+    @apply px-12 py-3 font-bold border-2 rounded-full border-primary-400 text-primary-400 hover:bg-primary-400 hover:text-[#F5F5F5] font-arima-madurai;
+  }
+}

@@ -1,0 +1,226 @@
+.section-hero {
+  @apply relative mt-20 bg-primary-300 mb-8 lg:mb-16;
+
+  &__redes {
+    @apply absolute hidden lg:flex top-1/2 right-0 gap-5 rotate-90   z-20;
+  }
+
+  &__red {
+    @apply text-base xl:text-xl text-primary-100 font-semibold hover:text-white;
+  }
+
+  &__slides {
+    @apply container h-[calc(100vh-4rem)] scroll-smooth  #{!important};
+  }
+
+  &__slide {
+    @apply flex flex-col sm:flex-row  gap-0  items-center justify-center py-5 lg:py-10 #{!important};
+    @apply lg:items-center #{!important};
+  }
+
+  &__container-contain {
+    @apply w-full flex flex-col gap-4 lg:gap-8 px-10 lg:pl-20 xl:pl-40;
+  }
+
+  &__title {
+    @apply font-arima-madurai text-2xl md:text-5xl lg:text-6xl leading-[1.4] lg:leading-[1]  text-primary-100;
+  }
+
+  &__title span {
+    @apply font-bold;
+  }
+
+  &__btn-contain {
+    @apply font-arima-madurai text-xs lg:text-xl;
+  }
+
+  &__container-img {
+    @apply w-full flex justify-start items-center py-4 lg:py-8;
+  }
+
+  &__img {
+    @apply w-3/4 lg:w-4/5 px-10;
+  }
+}
+
+//sección favoritos
+
+.section-favorites {
+  @apply container lg:mb-32 mb-16;
+
+  &__content {
+    @apply flex flex-col lg:gap-20 gap-14  items-center;
+  }
+
+  &__contentText {
+    @apply flex justify-center flex-col gap-5;
+  }
+
+  &__description {
+    @apply text-primary-400 font-sans-niramit text-center;
+  }
+
+  &__title {
+    @apply lg:text-6xl text-4xl font-arima-madurai font-bold text-center text-primary-300;
+  }
+
+  &__contCard {
+    @apply flex justify-center max-w-[350px]  sm:w-full flex-col gap-6  bg-primary-100 shadow-xl border-2 border-primary-400 h-full shadow-primary-100 items-center rounded-t-full;
+  }
+
+  &__contCardText {
+    @apply px-[2.5rem] pb-[3rem] text-center h-full flex  flex-col gap-6;
+  }
+
+  &__cardTitle {
+    @apply font-bold text-center lg:flex-auto  font-arima-madurai text-2xl md:text-3xl text-primary-400;
+  }
+
+  &__cardDescription {
+    @apply font-bold md:text-3xl flex-shrink-0 text-2xl font-sans-niramit text-primary-300;
+  }
+}
+
+//sección nuestras Tortas
+
+.section-our-cakes {
+  @apply mb-16 lg:mb-32;
+
+  &__content {
+    @apply grid xl:grid-cols-4 lg:grid-cols-2 grid-cols-1 bg-primary-200 divide-y-2;
+  }
+
+  &__contentText {
+    @apply flex container justify-center flex-col gap-5 xl:col-span-4 lg:col-span-2 py-20;
+  }
+
+  &__description {
+    @apply text-white font-sans-niramit text-center;
+  }
+
+  &__title {
+    @apply lg:text-6xl text-4xl font-arima-madurai font-bold text-center text-white;
+  }
+
+  &__contCard {
+    @apply grid xl:grid-cols-4 lg:grid-cols-2 grid-cols-1 lg:divide-x-2 divide-y-2 lg:divide-y-0   xl:divide-x-2 xl:col-span-4 lg:col-span-2;
+  }
+
+  &__card {
+    @apply flex flex-col items-center gap-6 p-16;
+  }
+
+  &__cardTitle {
+    @apply flex-1 font-arima-madurai font-bold text-center text-white lg:text-2xl text-xl;
+  }
+
+  &__cardBtn {
+    @apply border-2 border-white  rounded-full px-5 py-2 flex items-center gap-3 lg:gap-5 font-arima-madurai font-bold text-white text-sm lg:text-base;
+    &:hover {
+      @apply bg-white text-primary-300;
+    }
+    &:hover > i {
+      @apply border-primary-300 border-2;
+    }
+  }
+
+  &__btnArrow {
+    @apply border-2 border-white rounded-full p-2;
+  }
+}
+
+//sección nuestros Postres
+
+.section-our-desserts {
+  @apply container lg:mb-32;
+
+  &__content {
+    @apply flex flex-col gap-8;
+  }
+
+  &__contentText {
+    @apply flex container justify-center flex-col gap-5 xl:col-span-4 lg:col-span-2;
+  }
+
+  &__description {
+    @apply text-primary-400 font-sans-niramit text-center;
+  }
+
+  &__title {
+    @apply lg:text-6xl text-4xl font-arima-madurai font-bold text-center text-primary-300;
+  }
+
+  &__contCardlr {
+    @apply relative flex flex-col p-8  justify-center bg-primary-pink-300 rounded-t-full  w-[250px] h-[250px];
+  }
+
+  &__contCardmid {
+    @apply relative flex flex-col p-8 justify-center bg-primary-pink-200 rounded-t-full  w-[250px] h-[250px];
+  }
+
+  &__cardNumber {
+    @apply font-sans-bellefair text-primary-400 opacity-40 text-7xl;
+  }
+
+  &__cardDescription {
+    @apply font-arima-madurai text-2xl font-bold text-primary-400;
+  }
+
+  &__figure {
+    @apply absolute;
+
+    &--1 {
+      @apply -top-[32%] -right-[8%] lg:-top-[38%] lg:-right-[20%];
+    }
+    &--2 {
+      @apply -top-[20%] -right-[6%] lg:-top-[20%] lg:-right-[22%];
+    }
+    &--3 {
+      @apply -top-[35%] right-[0%] lg:-top-[38%] lg:-right-[20%];
+    }
+  }
+
+  &__image {
+    @apply max-w-[160px] lg:max-w-[200px];
+  }
+}
+
+//sección galería
+
+.section-gallery {
+  @apply container mb-16 lg:mb-32;
+
+  &__content {
+    @apply flex flex-col lg:gap-28 gap-16;
+  }
+
+  &__contentText {
+    @apply flex container justify-center flex-col gap-5;
+  }
+
+  &__description {
+    @apply text-primary-400 font-sans-niramit text-center;
+  }
+
+  &__title {
+    @apply lg:text-6xl text-4xl font-arima-madurai font-bold text-center text-primary-300;
+  }
+
+  &__contGallery {
+    @apply lg:flex lg:flex-col hidden gap-10;
+  }
+
+  &__contImg {
+    @apply flex justify-between gap-10;
+
+    &--1 {
+      @apply items-end;
+    }
+    &--2 {
+      @apply items-center;
+    }
+    &--3 {
+      @apply items-start;
+    }
+  }
+}

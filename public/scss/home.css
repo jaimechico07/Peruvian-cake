@@ -1,0 +1,573 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Laila:wght@400;500;600;700&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Niramit:wght@400;500;600;700&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Bellefair&display=swap");
+.heading-secondary {
+  @apply font-bold text-xl sm:text-3xl xl:text-4xl;
+}
+.heading-secondary--pink {
+  @apply text-primary-200 ml-1;
+}
+
+.heading__group {
+  @apply flex items-center justify-center flex-row text-center gap-2 sm:flex-col;
+}
+
+.heading__icon {
+  @apply text-primary-200 text-xl sm:text-4xl;
+}
+
+.btn {
+  @apply transition duration-500;
+}
+.btn--hero {
+  @apply flex gap-2 lg:gap-4 rounded-full self-start px-1 lg:px-2 py-1 lg:py-2 border lg:border-2 w-40 lg:w-56 text-white  hover:scale-[.9]  items-center justify-center transition duration-200;
+}
+.btn--hero i {
+  @apply text-xl border border-white rounded-full w-10 h-10 flex items-center justify-center;
+}
+.btn--hero-aboutUs {
+  @apply flex gap-2 lg:gap-4 rounded-full self-start font-bold px-2 lg:px-4 py-1 lg:py-2  border-2 border-primary-300 w-40 lg:w-44 text-primary-300  hover:scale-[.9]  items-center justify-center transition duration-300;
+}
+
+.social-networks {
+  @apply z-20 w-20 lg:w-[100px] h-20 lg:h-[100px] fixed hover:scale-[1.1] transition duration-500  md:bottom-32 bottom-5 lg:bottom-20 right-5 lg:right-20 flex items-center justify-center  rounded-full bg-primary-100 lg:bg-primary-300 shadow-xl  lg:border-2  border-white;
+}
+.social-networks__link {
+  @apply text-4xl lg:text-5xl text-primary-300 lg:text-white;
+}
+
+.footer {
+  @apply bg-primary-300 text-white pt-10 flex flex-col;
+}
+.footer__container {
+  @apply container grid grid-cols-1 md:grid-cols-3 lg:grid-cols-4 gap-4 place-items-center lg:place-items-start text-center lg:text-start;
+}
+.footer__logo {
+  @apply px-1;
+}
+.footer__title {
+  @apply font-sans-laila font-bold text-xl py-5;
+}
+.footer__contain {
+  @apply flex flex-col gap-3;
+}
+.footer__redes {
+  @apply flex flex-row lg:flex-col gap-3;
+}
+.footer__link {
+  @apply font-sans-niramit text-base;
+}
+.footer__link-container {
+  @apply flex gap-4 items-center;
+}
+.footer__icon-container {
+  @apply w-[60px] h-[60px] hover:scale-[1.1] transition duration-100  border-2 border-white rounded-full flex items-center justify-center;
+}
+.footer__icon-container i {
+  @apply m-auto text-xl;
+}
+.footer__icon-text {
+  @apply font-sans-niramit hidden lg:flex text-base hover:scale-[1.1] transition duration-100 break-all;
+}
+.footer__copy-container {
+  @apply w-full py-10;
+}
+.footer__copy-container div {
+  @apply container border-t-2 border-white;
+}
+.footer__copy-container p {
+  @apply text-base lg:text-xl text-center py-10;
+}
+
+.header {
+  @apply fixed w-full top-0 left-0 z-[100];
+  @apply bg-primary-300 text-white font-bold shadow-lg font-sans-laila;
+}
+.header__inner {
+  @apply container h-20;
+  @apply flex justify-between items-center;
+}
+.header__inner.active {
+  @apply justify-end lg:justify-between;
+}
+.header__logo img {
+  @apply w-16 lg:w-20;
+}
+.header__logo.active {
+  @apply hidden lg:block;
+}
+.header__icon {
+  @apply justify-self-end lg:hidden;
+}
+.header__icon i {
+  @apply text-2xl;
+}
+.header__arrow {
+  @apply transition-transform duration-300;
+}
+.header__arrow.active {
+  @apply rotate-180;
+}
+.header__item--submenu .header__link {
+  @apply inline-flex items-center justify-center lg:justify-between gap-2;
+}
+.header__item--group {
+  @apply flex gap-4;
+}
+.header__item--group .header__link {
+  @apply text-white border border-white;
+  @apply w-8 h-8 rounded-full flex justify-center items-center;
+  @apply transition-colors duration-300;
+}
+.header__item--group .header__link:hover {
+  @apply bg-white text-primary-300;
+}
+.header__link {
+  @apply text-lg block cursor-pointer lg:text-base;
+  @apply relative py-2 px-4;
+  @apply after:absolute after:bottom-1 after:left-4 after:right-4 after:h-[2px] after:bg-white after:scale-x-0 after:origin-center after:transition-transform after:duration-300;
+}
+.header__link:hover, .header__link.active {
+  @apply after:transition-transform after:duration-300 after:scale-x-[0.5];
+}
+.header__link--sub {
+  @apply block py-2 px-4;
+  @apply text-primary-300 text-sm font-semibold normal-case rounded-lg transition-all duration-300;
+}
+.header__link--sub:hover {
+  @apply text-primary-400 bg-primary-200/30;
+}
+.header__link--btn {
+  @apply px-9 py-1 rounded-full border border-white block hover:bg-white hover:text-primary-300 transition-colors duration-300;
+}
+
+.nav-desktop {
+  @apply hidden lg:flex;
+  @apply lg:justify-between lg:gap-8 xl:w-[70%] lg:items-center;
+}
+.nav-desktop .header__list {
+  @apply flex flex-row justify-center items-center h-full gap-0;
+  @apply border-b-2 border-white;
+}
+.nav-desktop .header__list--submenu {
+  @apply max-h-0 transition-all duration-300;
+  @apply overflow-hidden bg-primary-100 border-2 border-transparent invisible;
+  @apply absolute left-0 w-max top-[42px];
+}
+.nav-desktop .header__list--submenu.active {
+  @apply border-primary-400 visible p-4 max-h-[600px] !important;
+}
+.nav-desktop .header__item--submenu {
+  @apply relative w-full;
+}
+
+.nav-mobile {
+  @apply text-center;
+  @apply opacity-0 invisible pointer-events-none transition-all duration-300;
+  @apply absolute top-20 left-0 w-full h-[calc(100vh-80px)];
+  @apply bg-primary-300;
+  @apply lg:hidden;
+}
+.nav-mobile.active {
+  @apply opacity-100 visible pointer-events-auto overflow-y-scroll;
+}
+.nav-mobile.active .header__list {
+  @apply h-auto;
+}
+.nav-mobile .header__list {
+  @apply flex flex-col justify-center items-center gap-6 h-auto;
+}
+.nav-mobile .header__list--submenu {
+  @apply max-h-0 transition-all duration-300;
+  @apply overflow-y-scroll bg-primary-100 border-2 border-transparent invisible;
+}
+.nav-mobile .header__list--submenu .header__link {
+  @apply text-primary-300 text-base font-bold normal-case rounded-lg transition-all duration-300;
+}
+.nav-mobile .header__list--submenu .header__link:hover {
+  @apply text-primary-300 bg-primary-200/30;
+}
+.nav-mobile .header__list--submenu.active {
+  @apply p-4 border-primary-400 visible;
+}
+.nav-mobile .header__item--submenu {
+  @apply w-[60%];
+}
+
+.producto-card {
+  @apply relative;
+}
+.producto-card__title {
+  @apply text-center font-sans-laila;
+}
+.producto-card__picture {
+  @apply max-w-[260px] lg:max-w-[320px] block relative;
+}
+.producto-card__picture img {
+  @apply rounded-t-full overflow-hidden w-full h-full z-10 relative;
+}
+.producto-card__picture::before {
+  content: "";
+  @apply absolute w-full h-full bg-primary-100/30 border-2 border-primary-400 rounded-t-full top-3 -left-3 transition-all duration-300;
+}
+.producto-card__picture--small {
+  @apply block relative max-w-[260px] lg:max-w-[260px];
+}
+.producto-card__picture--small img {
+  @apply max-h-[260px] object-cover w-[250px] h-[260px];
+}
+.producto-card__content {
+  @apply pt-8 px-4 text-center font-sans-laila font-bold;
+}
+.producto-card__title {
+  @apply text-xl text-primary-400 pb-2;
+}
+.producto-card__link {
+  @apply px-6 py-2 text-primary-300 inline-block rounded-full border border-primary-300 uppercase hover:bg-primary-300 hover:text-white transition-colors duration-300;
+}
+.producto-card--showcase {
+  @apply lg:row-span-2 lg:col-start-1 lg:row-start-1 lg:justify-self-center;
+}
+.producto-card--showcase:hover .producto-card__picture::before {
+  @apply drop-shadow-[1px_1px_12px_#B95E6E] border-4;
+}
+
+.section-hero {
+  @apply relative mt-20 bg-primary-300 mb-8 lg:mb-16;
+}
+.section-hero__redes {
+  @apply absolute hidden lg:flex top-1/2 right-0 gap-5 rotate-90   z-20;
+}
+.section-hero__red {
+  @apply text-base xl:text-xl text-primary-100 font-semibold hover:text-white;
+}
+.section-hero__slides {
+  @apply container h-[calc(100vh-4rem)] scroll-smooth  !important;
+}
+.section-hero__slide {
+  @apply flex flex-col sm:flex-row  gap-0  items-center justify-center py-5 lg:py-10 !important;
+  @apply lg:items-center !important;
+}
+.section-hero__container-contain {
+  @apply w-full flex flex-col gap-4 lg:gap-8 px-10 lg:pl-20 xl:pl-40;
+}
+.section-hero__title {
+  @apply font-sans-laila text-2xl md:text-5xl lg:text-6xl leading-[1.4] lg:leading-[1]  text-primary-100;
+}
+.section-hero__title span {
+  @apply font-bold;
+}
+.section-hero__btn-contain {
+  @apply font-sans-laila text-xs lg:text-xl;
+}
+.section-hero__container-img {
+  @apply w-full flex justify-start items-center py-4 lg:py-8;
+}
+.section-hero__img {
+  @apply w-3/4 lg:w-4/5 px-10;
+}
+
+.section-favorites {
+  @apply container lg:mb-32 mb-16;
+}
+.section-favorites__content {
+  @apply flex flex-col lg:gap-20 gap-14  items-center;
+}
+.section-favorites__contentText {
+  @apply flex justify-center flex-col gap-5;
+}
+.section-favorites__description {
+  @apply text-primary-400 font-sans-niramit text-center;
+}
+.section-favorites__title {
+  @apply lg:text-6xl text-4xl font-sans-laila font-bold text-center text-primary-300;
+}
+.section-favorites__contCard {
+  @apply flex justify-center max-w-[350px]  sm:w-full flex-col gap-6  bg-primary-100 shadow-xl border-2 border-primary-400 h-full shadow-primary-100 items-center rounded-t-full;
+}
+.section-favorites__contCardText {
+  @apply px-[2.5rem] pb-[3rem] text-center h-full flex  flex-col gap-6;
+}
+.section-favorites__cardTitle {
+  @apply font-bold text-center lg:flex-auto  font-sans-laila text-2xl md:text-3xl text-primary-400;
+}
+.section-favorites__cardDescription {
+  @apply font-bold md:text-3xl flex-shrink-0 text-2xl font-sans-niramit text-primary-300;
+}
+
+.section-our-cakes {
+  @apply mb-16 lg:mb-32;
+}
+.section-our-cakes__content {
+  @apply grid xl:grid-cols-4 lg:grid-cols-2 grid-cols-1 bg-primary-200 divide-y-2;
+}
+.section-our-cakes__contentText {
+  @apply flex container justify-center flex-col gap-5 xl:col-span-4 lg:col-span-2 py-20;
+}
+.section-our-cakes__description {
+  @apply text-white font-sans-niramit text-center;
+}
+.section-our-cakes__title {
+  @apply lg:text-6xl text-4xl font-sans-laila font-bold text-center text-white;
+}
+.section-our-cakes__contCard {
+  @apply grid xl:grid-cols-4 lg:grid-cols-2 grid-cols-1 lg:divide-x-2 divide-y-2 lg:divide-y-0   xl:divide-x-2 xl:col-span-4 lg:col-span-2;
+}
+.section-our-cakes__card {
+  @apply flex flex-col items-center gap-6 p-16;
+}
+.section-our-cakes__cardTitle {
+  @apply flex-1 font-sans-laila font-bold text-center text-white lg:text-2xl text-xl;
+}
+.section-our-cakes__cardBtn {
+  @apply border-2 border-white  rounded-full px-5 py-2 flex items-center gap-3 lg:gap-5 font-sans-laila font-bold text-white text-sm lg:text-base;
+}
+.section-our-cakes__cardBtn:hover {
+  @apply bg-white text-primary-300;
+}
+.section-our-cakes__cardBtn:hover > i {
+  @apply border-primary-300 border-2;
+}
+.section-our-cakes__btnArrow {
+  @apply border-2 border-white rounded-full p-2;
+}
+
+.section-our-desserts {
+  @apply container lg:mb-32;
+}
+.section-our-desserts__content {
+  @apply flex flex-col gap-8;
+}
+.section-our-desserts__contentText {
+  @apply flex container justify-center flex-col gap-5 xl:col-span-4 lg:col-span-2;
+}
+.section-our-desserts__description {
+  @apply text-primary-400 font-sans-niramit text-center;
+}
+.section-our-desserts__title {
+  @apply lg:text-6xl text-4xl font-sans-laila font-bold text-center text-primary-300;
+}
+.section-our-desserts__contCardlr {
+  @apply relative flex flex-col p-8  justify-center bg-primary-pink-300 rounded-t-full  w-[250px] h-[250px];
+}
+.section-our-desserts__contCardmid {
+  @apply relative flex flex-col p-8 justify-center bg-primary-pink-200 rounded-t-full  w-[250px] h-[250px];
+}
+.section-our-desserts__cardNumber {
+  @apply font-sans-bellefair text-primary-400 opacity-40 text-7xl;
+}
+.section-our-desserts__cardDescription {
+  @apply font-sans-laila text-2xl font-bold text-primary-400;
+}
+.section-our-desserts__figure {
+  @apply absolute;
+}
+.section-our-desserts__figure--1 {
+  @apply -top-[32%] -right-[8%] lg:-top-[38%] lg:-right-[20%];
+}
+.section-our-desserts__figure--2 {
+  @apply -top-[20%] -right-[6%] lg:-top-[20%] lg:-right-[22%];
+}
+.section-our-desserts__figure--3 {
+  @apply -top-[35%] right-[0%] lg:-top-[38%] lg:-right-[20%];
+}
+.section-our-desserts__image {
+  @apply max-w-[160px] lg:max-w-[200px];
+}
+
+.section-gallery {
+  @apply container mb-16 lg:mb-32;
+}
+.section-gallery__content {
+  @apply flex flex-col lg:gap-28 gap-16;
+}
+.section-gallery__contentText {
+  @apply flex container justify-center flex-col gap-5;
+}
+.section-gallery__description {
+  @apply text-primary-400 font-sans-niramit text-center;
+}
+.section-gallery__title {
+  @apply lg:text-6xl text-4xl font-sans-laila font-bold text-center text-primary-300;
+}
+.section-gallery__contGallery {
+  @apply lg:flex lg:flex-col hidden gap-10;
+}
+.section-gallery__contImg {
+  @apply flex justify-between gap-10;
+}
+.section-gallery__contImg--1 {
+  @apply items-end;
+}
+.section-gallery__contImg--2 {
+  @apply items-center;
+}
+.section-gallery__contImg--3 {
+  @apply items-start;
+}
+
+.swiper--home-hero .swiper-vertical > .swiper-pagination-progressbar,
+.swiper--home-hero .swiper-pagination-progressbar.swiper-pagination-vertical,
+.swiper--home-hero .swiper-horizontal > .swiper-pagination-progressbar.swiper-pagination-progressbar-opposite,
+.swiper--home-hero .swiper-pagination-progressbar.swiper-pagination-horizontal.swiper-pagination-progressbar-opposite {
+  @apply top-[34%] left-[87%] md:left-[90%] lg:left-[5rem] h-[25%];
+}
+.swiper--home-hero .swiper-pagination {
+  @apply bg-[#FAE4E8];
+  --swiper-theme-color: #b95e6e;
+}
+.swiper--home-hero .swiper-pagination-bullet {
+  @apply bg-primary-300 w-2 md:w-3 lg:h-4 h-2 lg:w-4;
+}
+.swiper--home-hero .swiper-pagination-bullet-active {
+  @apply bg-primary-300 w-2 md:w-3 lg:h-4 h-2 lg:w-4;
+}
+.swiper--home-hero .swiper-button-prev,
+.swiper--home-hero .swiper-rtl .swiper-button-next {
+  @apply left-[80%] md:left-[87%] lg:left-10;
+}
+.swiper--home-hero .swiper-button-next,
+.swiper--home-hero .swiper-rtl .swiper-button-prev {
+  @apply left-[80%] md:left-[87%] lg:left-10;
+}
+.swiper--home-hero .swiper-button-prev {
+  @apply top-[30%] grid place-items-center bg-primary-300 text-white rounded-full transition-all duration-200 z-20 hover:scale-[1.2];
+}
+.swiper--home-hero .swiper-button-next {
+  @apply top-[60%] grid place-items-center bg-primary-300 text-white rounded-full transition-all duration-200 z-20 hover:scale-[1.2];
+}
+.swiper--home-hero .swiper-button-prev::after,
+.swiper--home-hero .swiper-button-next::after {
+  @apply font-bold text-xl rotate-90;
+}
+.swiper--home-hero .swiper-button-prev {
+  @apply after:content-["prev"];
+}
+.swiper--home-hero .swiper-button-next {
+  @apply after:content-["next"];
+}
+.swiper--home-hero .swiper-button-prev,
+.swiper--home-hero .swiper-button-next {
+  @apply w-14 lg:w-20 h-14 lg:h-20;
+}
+.swiper--favorites .swiper-slide {
+  @apply h-full;
+}
+.swiper--favorites .swiper-wrapper {
+  @apply h-full md:h-[515px];
+}
+.swiper--favorites .swiper-slide img {
+  @apply block px-5 pt-5;
+}
+.swiper--favorites .swiper-button-prev,
+.swiper--favorites .swiper-button-next {
+  @apply grid place-items-center  text-primary-400 rounded-full transition-all duration-200 z-20  hover:scale-[1.2];
+}
+.swiper--favorites .swiper-button-prev::after,
+.swiper--favorites .swiper-button-next::after {
+  @apply font-extrabold  text-3xl;
+}
+.swiper--favorites .swiper-button-prev {
+  @apply after:content-["prev"];
+}
+.swiper--favorites .swiper-button-next {
+  @apply after:content-["next"];
+}
+.swiper--desserts .swiper-slide {
+  @apply h-full flex  w-[250px] relative;
+}
+.swiper--desserts .swiper-slide-1 {
+  @apply items-center;
+}
+.swiper--desserts .swiper-slide-2 {
+  @apply items-center lg:items-end;
+}
+.swiper--desserts .swiper-slide img {
+  @apply w-full;
+}
+.swiper--desserts .swiper-wrapper {
+  @apply py-16 h-[350px];
+}
+.swiper--desserts .swiper-button-prev,
+.swiper--desserts .swiper-button-next {
+  @apply grid place-items-center  text-primary-400 rounded-full transition-all duration-200 z-20  hover:scale-[1.2];
+}
+.swiper--desserts .swiper-button-prev::after,
+.swiper--desserts .swiper-button-next::after {
+  @apply font-extrabold  text-3xl;
+}
+.swiper--desserts .swiper-button-prev {
+  @apply after:content-["prev"];
+}
+.swiper--desserts .swiper-button-next {
+  @apply after:content-["next"];
+}
+.swiper--gallery {
+  @apply w-full h-full lg:hidden container;
+}
+.swiper--gallery .swiper-slide {
+  @apply max-w-[300px] flex justify-center m-auto  items-center px-4;
+  height: calc((100% - 30px) / 2) !important;
+}
+.swiper--gallery .swiper-wrapper {
+  @apply h-[900px] flex;
+}
+.swiper--gallery .swiper-slide img {
+  @apply block w-full h-full object-cover;
+}
+.swiper--gallery .swiper-button-prev,
+.swiper--gallery .swiper-button-next {
+  @apply grid place-items-center  text-primary-400 rounded-full transition-all duration-200 z-20  hover:scale-[1.2];
+}
+.swiper--gallery .swiper-button-prev::after,
+.swiper--gallery .swiper-button-next::after {
+  @apply font-extrabold  text-3xl;
+}
+.swiper--gallery .swiper-button-prev {
+  @apply after:content-["prev"];
+}
+.swiper--gallery .swiper-button-next {
+  @apply after:content-["next"];
+}
+.swiper--ourTeam .swiper-slide {
+  @apply h-full flex justify-center items-center;
+}
+.swiper--ourTeam .swiper-wrapper {
+  @apply h-full;
+}
+.swiper--ourTeam .swiper-slide img {
+  @apply block px-5 pt-5 object-cover;
+}
+.swiper--ourTeam .swiper-button-prev,
+.swiper--ourTeam .swiper-button-next {
+  @apply grid place-items-center  text-primary-400 rounded-full transition-all duration-200 z-20  hover:scale-[1.2];
+}
+.swiper--ourTeam .swiper-button-prev::after,
+.swiper--ourTeam .swiper-button-next::after {
+  @apply font-extrabold  lg:text-3xl text-xl;
+}
+.swiper--ourTeam .swiper-button-prev {
+  @apply after:content-["prev"];
+}
+.swiper--ourTeam .swiper-button-next {
+  @apply after:content-["next"];
+}
+.swiper--detalle-destacados {
+  @apply px-16 py-6 !important;
+}
+.swiper--detalle-destacados .swiper-button-prev,
+.swiper--detalle-destacados .swiper-button-next {
+  @apply text-primary-400 transition-all duration-200 z-20 hover:scale-[1.2] block;
+}
+.swiper--detalle-destacados .swiper-button-prev::after,
+.swiper--detalle-destacados .swiper-button-next::after {
+  @apply font-bold  text-2xl;
+}
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+body {
+  @apply bg-primary-600;
+}

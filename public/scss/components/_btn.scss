@@ -1,0 +1,13 @@
+.btn {
+  @apply transition duration-500;
+  &--hero {
+    @apply flex gap-2 lg:gap-4 rounded-full self-start px-1 lg:px-2 py-1 lg:py-2 border lg:border-2 w-40 lg:w-56 text-white  hover:scale-[.9]  items-center justify-center transition duration-200;
+    i {
+      @apply text-xl border border-white rounded-full w-10 h-10 flex items-center justify-center;
+    }
+  }
+
+  &--hero-aboutUs {
+    @apply flex gap-2 lg:gap-4 rounded-full self-start font-bold px-2 lg:px-4 py-1 lg:py-2  border-2 border-primary-300 w-40 lg:w-44 text-primary-300  hover:scale-[.9]  items-center justify-center transition duration-300;
+  }
+}

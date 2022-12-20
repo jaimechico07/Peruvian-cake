@@ -1,0 +1,41 @@
+.section-products {
+  @apply container mt-40 mb-40;
+
+  &__title {
+    @apply font-bold mb-20 text-center text-primary-300 font-arima-madurai text-3xl md:text-5xl;
+    span {
+      @apply text-primary-400;
+    }
+  }
+
+  &__contCards {
+    @apply grid md:grid-cols-[repeat(auto-fit,_minmax(250px,_1fr))] max-w-[1000px] m-auto  place-items-center gap-x-16 gap-y-16  lg:gap-y-24;
+  }
+
+  &__card {
+    @apply grid place-content-center justify-center max-w-[250px]  lg:max-w-none gap-5;
+  }
+
+  &__figure {
+    @apply block relative max-w-[260px] max-h-[300px] h-full w-full;
+    img {
+      @apply z-10 relative block w-full h-[inherit];
+    }
+    &::before {
+      content: "";
+      @apply absolute w-full h-full bg-primary-100/30 border-2 border-primary-400 rounded-t-full top-3 -left-3 transition-all duration-300;
+    }
+  }
+
+  &__new {
+    @apply absolute w-20 h-20 rounded-full flex justify-center items-center text-white bg-primary-400 top-0 right-0 text-2xl z-20;
+  }
+
+  &__cardText {
+    @apply font-bold text-center text-primary-400  text-2xl font-arima-madurai;
+  }
+
+  &__cardBtn {
+    @apply font-bold m-auto text-center text-primary-300 text-base font-arima-madurai px-6 py-2 border-2 rounded-full border-primary-300;
+  }
+}

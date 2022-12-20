@@ -1,0 +1,54 @@
+.footer {
+  @apply bg-primary-300 text-white pt-10 flex flex-col;
+
+  &__container {
+    @apply container grid grid-cols-1 md:grid-cols-3 lg:grid-cols-4 gap-4 place-items-center lg:place-items-start text-center lg:text-start;
+  }
+
+  &__logo {
+    @apply px-1;
+  }
+
+  &__title {
+    @apply font-arima-madurai font-bold text-xl py-5;
+  }
+
+  &__contain {
+    @apply flex flex-col gap-3;
+  }
+
+  &__redes {
+    @apply flex flex-row lg:flex-col gap-3;
+  }
+
+  &__link {
+    @apply font-sans-niramit text-base;
+  }
+
+  &__link-container {
+    @apply flex gap-4 items-center;
+  }
+
+  &__icon-container {
+    @apply w-[60px] h-[60px] hover:scale-[1.1] transition duration-100  border-2 border-white rounded-full flex items-center justify-center;
+    i {
+      @apply m-auto text-xl;
+    }
+  }
+
+  &__icon-text {
+    @apply font-sans-niramit hidden lg:flex text-base hover:scale-[1.1] transition duration-100 break-all;
+  }
+
+  &__copy-container {
+    @apply w-full py-10;
+  }
+
+  &__copy-container div {
+    @apply container border-t-2 border-white;
+  }
+
+  &__copy-container p {
+    @apply text-base lg:text-xl text-center py-10;
+  }
+}

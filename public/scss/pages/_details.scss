@@ -1,0 +1,58 @@
+.section-hero-details {
+  @apply bg-primary-100/30 pb-16 pt-28;
+  &__grid {
+    @apply container grid lg:grid-cols-2 gap-8 justify-items-center lg:grid-rows-[100px_auto] lg:justify-items-start 2xl:w-[70%] lg:gap-2;
+  }
+
+  &__title {
+    @apply text-primary-300 font-arima-madurai font-semibold text-3xl text-center lg:text-left sm:text-4xl;
+    @apply lg:col-start-2 lg:pt-8;
+    span {
+      @apply text-primary-400;
+    }
+  }
+
+  &__content {
+    @apply font-sans-niramit;
+  }
+
+
+  &__subtitle {
+    @apply font-arima-madurai font-semibold text-lg text-primary-400 mb-4 block;
+  }
+
+  &__text {
+    @apply text-sm lg:text-base lg:w-[80%];
+  }
+
+  &__prices {
+    @apply flex flex-col gap-4 md:flex-row md:flex-wrap;
+  }
+
+  &__price {
+    @apply border-2 border-primary-400 px-4 py-2 text-primary-400 flex gap-4 items-center max-w-[200px] font-sans-niramit font-semibold text-sm;
+    i {
+      @apply text-2xl;
+    }
+  }
+
+  &__btn {
+    @apply px-6 py-2 uppercase text-xs font-arima-madurai text-primary-300 rounded-full border border-primary-300 font-semibold hover:bg-primary-300 hover:text-white transition-colors duration-300;
+  }
+}
+
+.section-featured {
+  @apply py-12;
+
+  &__inner {
+    @apply container;
+  }
+
+  &__title {
+    @apply text-center font-arima-madurai text-primary-400 text-3xl font-bold mb-4 sm:mb-8;
+  }
+
+  &__cards {
+    @apply 2xl:mx-auto 2xl:w-[75%];
+  }
+}

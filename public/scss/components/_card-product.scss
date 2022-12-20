@@ -1,0 +1,48 @@
+.card-product {
+  @apply relative;
+
+  &__title {
+    @apply text-center font-arima-madurai;
+  }
+  
+  &__picture {
+    @apply max-w-[260px] lg:max-w-[320px] block relative;
+    
+    img {
+      @apply rounded-t-full overflow-hidden w-full h-full z-10 relative;
+    }
+
+    &::before {
+      content: "";
+      @apply absolute w-full h-full bg-primary-100/30 border-2 border-primary-400 rounded-t-full top-3 -left-3 transition-all duration-300;
+    }
+
+    &--small {
+      @apply block relative max-w-[260px] lg:max-w-[260px];
+      img {
+        @apply max-h-[260px] object-cover w-[250px] h-[260px];
+      }
+    }
+  }
+
+  &__content {
+    @apply pt-8 px-4 text-center font-arima-madurai font-bold;
+  }
+
+  &__title {
+    @apply text-xl text-primary-400 pb-2;
+  }
+
+  &__link {
+    @apply px-6 py-2 text-primary-300 inline-block rounded-full border border-primary-300 uppercase hover:bg-primary-300 hover:text-white transition-colors duration-300;
+  }
+
+  &--showcase {
+    @apply lg:row-span-2 lg:col-start-1 lg:row-start-1 lg:justify-self-center;
+    &:hover {
+      .product-card__picture::before {
+        @apply drop-shadow-[1px_1px_12px_#B95E6E] border-4;
+      }
+    }
+  }
+}

@@ -1,0 +1,166 @@
+.section-aboutUs-hero {
+  @apply w-full h-full lg:h-[calc(100vh-4rem)] bg-[rgba(250,228,232,0.3)] mt-20 mb-8 lg:mb-16;
+
+  &__container {
+    @apply h-full flex flex-col lg:flex-row  gap-4  items-center justify-center py-5 lg:py-10;
+  }
+
+  &__container-contain {
+    @apply w-full h-full flex flex-col lg:items-center lg:justify-center gap-4 lg:gap-8 px-10  lg:pl-20 xl:pl-40;
+  }
+
+  &__title {
+    @apply font-bold font-arima-madurai text-3xl md:text-5xl lg:text-[85px] leading-[1.4] lg:leading-[1]  text-primary-200;
+  }
+
+  &__title span {
+    @apply text-primary-400;
+  }
+
+  &__description {
+    @apply font-sans-niramit text-[14px] lg:text-[22px];
+  }
+
+  &__container-img {
+    @apply w-full h-full flex lg:justify-center lg:items-center;
+  }
+
+  &__img {
+    @apply lg:h-auto px-10;
+  }
+}
+
+// seccion mision y vision
+.section-mission-vision {
+  @apply mb-16;
+
+  &__content {
+    @apply flex justify-center items-center relative;
+  }
+
+  &__contCard {
+    @apply flex lg:flex-row  flex-col gap-12 container justify-center items-center absolute top-0 w-full h-full;
+  }
+
+  &__MiVi {
+    @apply border-2 border-primary-400 bg-primary-100 divide-y-2  divide-primary-400 max-w-[450px];
+  }
+
+  &__MiViTitle {
+    @apply px-10 py-7 font-arima-madurai font-bold text-2xl text-primary-300;
+  }
+
+  &__MiViDescription {
+    @apply px-10 py-9 font-sans-niramit text-primary-500 leading-8;
+  }
+
+  &__picture {
+    @apply w-full;
+  }
+
+  &__img {
+    @apply bg-no-repeat bg-cover bg-center object-cover h-[800px] lg:h-auto w-full;
+  }
+}
+
+// seccion nuestros valores
+.section-our-values {
+  @apply container mb-20 lg:mb-32;
+
+  &__content {
+    @apply flex flex-col gap-10  items-center;
+  }
+
+  &__contText {
+    @apply flex justify-center flex-col gap-5;
+  }
+
+  &__subTitle {
+    @apply text-primary-400 font-sans-niramit text-center;
+  }
+
+  &__title {
+    @apply lg:text-6xl text-4xl font-arima-madurai font-bold text-center text-primary-300;
+  }
+
+  &__values {
+    @apply flex w-full flex-col lg:flex-row lg:justify-around items-center gap-8 lg:gap-0;
+  }
+
+  &__value {
+    @apply flex items-center gap-4;
+    i {
+      @apply text-primary-400 text-2xl lg:text-3xl;
+    }
+  }
+
+  &__valueName {
+    @apply text-lg text-primary-400 font-sans-niramit font-bold;
+  }
+}
+
+//seccion nuestro equipo
+
+.section-our-team {
+  @apply container mb-16;
+
+  &__content {
+    @apply flex flex-col gap-14 lg:gap-24  items-center;
+  }
+
+  &__contText {
+    @apply flex justify-center flex-col gap-5;
+  }
+
+  &__subTitle {
+    @apply text-primary-400 font-sans-niramit text-center;
+  }
+
+  &__title {
+    @apply lg:text-6xl text-4xl font-arima-madurai font-bold text-center text-primary-300;
+  }
+
+  &__infoCont {
+    @apply flex justify-center flex-col-reverse lg:flex-row gap-10;
+  }
+
+  &__picture {
+    @apply lg:w-1/2 w-full  m-auto flex justify-center items-center;
+  }
+
+  &__img {
+    @apply lg:w-full;
+  }
+
+  &__infoText {
+    @apply max-w-[500px] flex flex-col lg:gap-7 gap-4 justify-center;
+  }
+
+  &__infoTitle {
+    @apply text-primary-400 font-arima-madurai text-3xl font-bold;
+  }
+
+  &__infoSubtitle {
+    @apply text-primary-300 font-arima-madurai text-2xl font-bold;
+  }
+
+  &__infoDescription {
+    @apply text-primary-500 text-lg;
+  }
+}
+
+.section-featured {
+  @apply py-12;
+
+  &__inner {
+    @apply container;
+  }
+
+  &__title {
+    @apply lg:text-5xl text-4xl font-arima-madurai font-bold text-center text-primary-300;
+  }
+
+  &__cards {
+    @apply 2xl:mx-auto 2xl:w-[75%];
+  }
+}

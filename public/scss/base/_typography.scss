@@ -1,0 +1,19 @@
+.heading-primary {
+}
+
+.heading-secondary {
+  @apply font-bold text-xl sm:text-3xl xl:text-4xl;
+
+  &--pink {
+    @apply text-primary-200 ml-1;
+  }
+}
+
+// Para los grupos de titulos
+.heading__group {
+  @apply flex items-center justify-center flex-row text-center gap-2 sm:flex-col;
+}
+
+.heading__icon {
+  @apply text-primary-200 text-xl sm:text-4xl;
+}
